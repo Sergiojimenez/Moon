@@ -1,0 +1,26 @@
+
+.content-section {
+    padding-top: 100px;
+}
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: $grayscale-light;
+    background: $grayscale-dark url(../images/downloads-bg.jpg) no-repeat scroll center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+@media (min-width: $screen-xs-max) {
+    .content-section {
+        padding-top: 150px;
+    }
+    .download-section {
+        padding: 100px 0;
+    }
+}
+

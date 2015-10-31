@@ -1,8 +1,24 @@
-/* Vendor imports */
+/* Vendor  */
 @import "vendor/_bootstrap";
 @import "vendor/_font-awesome";
 @import "vendor/hover";
 
-/* App imports */
+/* Config */
 @import "app/_variables";
-@import "app/_greyscale";
+@import "app/_base";
+
+/* Partials */
+@import "app/_typo";
+
+
+
+/* Components */
+@import "app/_navbar";
+@import "app/_intro";
+@import "app/_sections";
+@import "app/_buttons";
+@import "app/_rotate_panel";
+@import "app/_moon";
+
+/*lib Typo*/
+@import "vendor/typeplate";

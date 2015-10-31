@@ -1,0 +1,91 @@
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid $grayscale-light;
+    border-radius: 35px;
+    font-size: 40px;
+    color: $grayscale-light;
+    background: transparent;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $grayscale-light;
+        background: transparentize($grayscale-light, 0.9);
+    }
+}
+
+#btn-contact {
+    color: white;
+    background-color: #1abc9c;
+    &:hover {
+        background-color: $background-button ;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    @include button-variant($grayscale-primary, transparentize(white, 1), $grayscale-primary);
+    background-color: $background-button ;
+    &:hover,
+    &:focus {
+        border: 1px solid $grayscale-primary;
+        outline: none;
+        color: $grayscale-dark;
+        background-color: $grayscale-primary;
+    }
+}
+
+.btn-hero {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+    padding: 10px 40px;
+    &:hover {
+        background-color: $background-button ;
+    }
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media (max-width: $screen-md-max) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    ul.banner-social-buttons {
+        li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.page-scroll .btn-nav-contact {
+    a{
+      color: white !important;  
+    }
+    background-color: #1abc9c;
+}

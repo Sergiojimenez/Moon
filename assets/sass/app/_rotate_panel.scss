@@ -1,0 +1,36 @@
+
+.rotate-panel {
+    padding: 100px 0;
+    text-align: center;
+}
+.rotate-panel > div > div{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.rotate-panel > div:hover > div{
+    margin-top: -10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+.rotate-panel > div:hover img {
+    border-radius: 50%;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.rotate-panel {
+    .img-thumbnail {
+    background-color: $grayscale-primary;
+    border: 1px solid $grayscale-primary;
+    }
+    .img-circle {
+        margin-bottom: 3rem;
+    }
+}
