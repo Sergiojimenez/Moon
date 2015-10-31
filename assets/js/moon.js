@@ -28,3 +28,5 @@ $("#download-btn").click(function(e){
   e.preventDefault();
   $('#downloaded').html("Thank's for your download");
 });
+
+$('.selectpicker').selectpicker({ 'selectedText': '',style:'btn-lg' });
